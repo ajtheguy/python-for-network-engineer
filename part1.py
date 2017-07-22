@@ -2,7 +2,7 @@ import getpass
 import sys
 import telnetlib
 
-HOST = "192.168.122.116"
+HOST = "192.168.122.206"
 user = raw_input("Enter your remote account: ")
 password = getpass.getpass()
 
@@ -19,6 +19,10 @@ tn.write("cisco\n")
 tn.write("conf t\n")
 tn.write("int loop 0\n")
 tn.write("ip address 1.1.1.1 255.255.255.255\n")
+tn.write("int loop 1\n")
+tn.write("ip address 2.2.2.2 255.255.255.255\n")
+tn.write("router ospf 1\n")
+tn.write("network 0.0.0.0 255.255.255.255 area 0\n")
 tn.write("end\n")
 tn.write("exit\n")
 
