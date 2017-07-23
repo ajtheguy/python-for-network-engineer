@@ -1,6 +1,7 @@
 #!/usr/bin/env python2.7
 
 from netmiko import ConnectHandler
+import getpass
 
 #Ask for username and password
 user = raw_input("Enter your remote account: ")
