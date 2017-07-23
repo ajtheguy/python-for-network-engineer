@@ -9,8 +9,8 @@
  Netmiko library, multi vendor SSH client.
  https://github.com/ktbyers/netmiko
 
-Napalm library, abstraction multi vendor support. Focus on managing configuration tasks.
+Napalm library, abstraction multi vendor support. Use nativ API when possible. Cisco IOS use Netmiko SSH library. Focus on managing configuration tasks.
 https://github.com/napalm-automation/napalm
 
-pyntc library, multi vendor support. Focus on system level tasks.
+pyntc library, multi vendor support. Use nativ API when possible. Cisco IOS use Netmiko SSH library. Focus on system level tasks.
 https://github.com/networktocode/pyntc
